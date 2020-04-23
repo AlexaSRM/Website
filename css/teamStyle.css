@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #091744;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+
+.team-heading {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.team-heading p::after {
+  content: "";
+  background-color: #173b83;
+  position: relative;
+  top: 5px;
+  left: 50%;
+  display: block;
+  width: 50%;
+  height: 5px;
+}
+
+.container {
+  width: 100%;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .box {
+  position: relative;
+  width: 200px;
+  height: 350px;
+  margin: 0px 70px;
+}
+
+.container .box .img-box {
+  height: 200px;
+  width: 200px;
+  border: 3px solid #1e90ff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.container .box .img-box img {
+  max-width: 120%;
+  object-fit: contain;
+}
+
+.name,
+.role {
+  text-align: center;
+  text-transform: capitalize;
+}
+.name {
+  margin-top: 20px;
+}
+.role h3 {
+  margin: 10px 0 5px 0;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  margin: 0 10px;
+  border-radius: 3px;
+  background-color: #b2bec3;
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 500px) {
+  .container .box {
+    position: relative;
+    width: 150px;
+    height: 300px;
+    margin: 0px 70px;
+  }
+
+  .container .box .img-box {
+    height: 150px;
+    width: 150px;
+  }
+
+  .team-heading {
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 0;
+  }
+  .role {
+    font-size: 12px;
+  }
+}
