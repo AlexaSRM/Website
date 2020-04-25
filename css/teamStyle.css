@@ -8,21 +8,49 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+  margin: 80px;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.creatives,
+.business {
+  display: none;
+}
+
+.underline::after {
+  content: "";
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 5px;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.underline:hover::after {
+  width: 100%;
+  background-color: #173b83;
+}
+
 .team-heading {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 100px;
-  font-size: 30px;
+  justify-content: center;
+  font-size: 28px;
   font-weight: 700;
   text-transform: capitalize;
 }
 
 .team-heading p::after {
   content: "";
+  margin: auto;
   background-color: #173b83;
   position: relative;
   top: 5px;
-  left: 50%;
   display: block;
   width: 50%;
   height: 5px;
@@ -38,14 +66,14 @@ body {
 }
 .container .box {
   position: relative;
-  width: 200px;
-  height: 350px;
-  margin: 0px 70px;
+  width: 150px;
+  height: 300px;
+  margin: 20px 40px;
 }
 
 .container .box .img-box {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 3px solid #1e90ff;
   border-radius: 50%;
   position: relative;
@@ -62,6 +90,8 @@ body {
   text-transform: capitalize;
 }
 .name {
+  font-size: 20px;
+  font-weight: 700;
   margin-top: 20px;
 }
 .role h3 {
@@ -73,31 +103,53 @@ body {
 }
 .dot {
   margin: 0 10px;
-  border-radius: 3px;
+  border-radius: 50%;
   background-color: #b2bec3;
   width: 10px;
   height: 10px;
 }
 
+.primary::after,
+.click-underline::after {
+  content: "";
+  margin: auto;
+  background-color: #173b83;
+  display: block;
+  width: 100%;
+  height: 5px;
+}
+
 @media (max-width: 500px) {
+  .btns {
+    margin: 22px;
+    font-size: 16px;
+  }
+
   .container .box {
     position: relative;
-    width: 150px;
-    height: 300px;
+    width: 100px;
+    height: 250px;
     margin: 0px 70px;
   }
 
   .container .box .img-box {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
   }
 
   .team-heading {
-    justify-content: center;
-    font-size: 20px;
-    margin-right: 0;
+    font-size: 22px;
+  }
+  .name {
+    font-size: 14px;
   }
   .role {
-    font-size: 12px;
+    font-size: 11px;
+  }
+
+  .dot {
+    margin: 0 7px;
+    width: 8px;
+    height: 8px;
   }
 }
