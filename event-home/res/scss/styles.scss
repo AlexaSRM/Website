@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
-
 $color-primary: #091744;
 $color-secondary: #173b83;
-
 html {
     position: relative;
     font-family: 'Lato', sans-serif;
@@ -18,13 +16,12 @@ article.event {
     background-color: $color-primary;
     color: white;
     font-family: 'Lato', sans-serif;
-
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
     h2 {
         font-family: 'Lato', serif;
         font-weight: bold;
         position: relative;
         padding-bottom: 5px;
-
         &::before {
             content: '';
             color: $color-secondary;
@@ -36,37 +33,30 @@ article.event {
             width: 70px;
         }
     }
-
     p {
         margin: 2% 15%;
     }
-
     div {
         ul {
             li {
                 div.design1 {
                     background-color: #302579;
                 }
-
                 div.design2 {
                     background-color: $color-secondary;
                 }
-
                 div.event-card {
                     position: relative;
                     width: 240px;
                     height: auto;
                     padding: 10px;
                     border-radius: 20px;
-
                     img {
                         width: 160px;
                         height: 160px;
                     }
-
                     div.event-card-content {
                         margin-top: 40px;
-
                         h4 {
                             font-family: 'Lato', serif;
                             font-weight: bold;
@@ -74,13 +64,11 @@ article.event {
                             font-size: 0.9rem;
                             text-transform: uppercase;
                         }
-
                         p {
                             font-family: 'Lato', sans-serif;
                             color: #ffffff;
                             font-size: 0.6rem;
                         }
-
                     }
                 }
             }
