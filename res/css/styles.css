@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    background-color: #091744;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-image: url(../img/nav2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 4;
+    box-shadow: 0px 2px 12px #29B6F6;
+    padding: 10px 30px;
+}
+.navbar .logo{
+    width: 30px;
+    height: 30px;
+    transform: translateY(-10%);
+}
+.navbar-nav{
+    font-weight: 600;
+}
+.navbar a{
+    color: white;
+}
+.navbar .active{
+    border-bottom: 2px solid white;
+}
+.navbar-toggler-icon{
+    z-index: 10;
+}
+.hero{
+    background-image: url('../img/Top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    z-index: 3;
+}
+.hero .hero-body{
+    height: 100%;
+}
+.hero .hbody{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+.hero .hbody h1{
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+.hero .hbody p{
+    font-weight: 400;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+}
+.hero .hero-logo{
+    height: 250px;
+    width: 250px;
+    margin: 2rem 0 0 0;
+    background-color: #091744;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px #29B6F6;
+}
+.about{
+    display: flex;
+    align-items: center;
+    background-image: url('../img/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-position:90%;
+    height: 80vh;
+    transform: translateY(-6vh);
+    padding: 6vh 15px;
+}
+.about p{
+    font-weight: 600;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+}
+.about .title::after {
+    background-color: #173b83;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 50%;
+}
+article.event {
+    margin: 50px 5px;
+    background-color: #091744;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+article.event h2 {
+font-family: 'Lato', serif;
+font-weight: bold;
+position: relative;
+padding-bottom: 5px;
+}
+
+article.event h2::before {
+content: '';
+color: #173b83;
+border-bottom: 5px solid #173b83;
+position: absolute;
+left: calc(50% - 35px);
+bottom: 0px;
+display: block;
+width: 70px;
+}
+
+article.event p {
+margin: 2% 15%;
+font-weight: 600;
+font-size: 1.2rem;
+}
+
+article.event div ul li div.design1 {
+background-color: #302579;
+}
+
+article.event div ul li div.design2 {
+background-color: #173b83;
+}
+
+article.event div ul li div.event-card {
+position: relative;
+width: 240px;
+height: auto;
+padding: 10px;
+border-radius: 20px;
+}
+
+article.event div ul li div.event-card img {
+width: 160px;
+height: 160px;
+}
+
+article.event div ul li div.event-card div.event-card-content {
+margin-top: 40px;
+}
+
+article.event div ul li div.event-card div.event-card-content h4 {
+    font-family: 'Lato', serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+article.event div ul li div.event-card div.event-card-content p {
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+.events{
+    margin-bottom: 2rem;
+}
+.title-2{
+    position: relative;
+    padding-bottom: 1.3rem;
+}
+.title-2::after {
+    BACKGROUND-COLOR: #173b83;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 10px;
+    left: 50%;
+    position: absolute;
+    width: 50%;
+    transform: translateX(-50%);
+}
+.circle{
+    background-color: #7B1FA2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 6px 1rem;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    background-image: url(../img/foot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-position: center bottom;
+    height: 40vh;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.contact ul{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+.contact .cbody{
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 10px;
+}
+.contact .fa-lg{
+    font-size: 1.2rem;
+    font-weight: 600 !important;
+}
+@media(max-width:1280px){
+    .hero .hbody p{
+        margin-bottom: 2rem;
+    }  
+}
+@media(max-width:1024px){
+    .about p{
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+    article.event p {
+        margin: 4% 10%;
+        font-size: 0.8rem;
+    } 
+}
+@media(max-width:767px){
+    .hero .hero-logo{
+        height: 180px;
+        width: 180px;
+    }
+    .hero .hbody h1{
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    .hero .hero-body p{
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+    .about p{
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+    .contact{
+        background-image: url(../img/foot.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: local;
+        background-position: center bottom;
+        height: 30vh;
+    }
+    .circle{
+        margin: 6px 0.6rem;
+    }
+}
+@media(max-width:415px){
+    .navbar-brand{
+        font-size: 1.0rem;
+    }
+    .navbar{
+        padding: 10px 20px;
+    }
+    .hero{
+        height: 75vh;
+    }
+    .hero .hero-logo{
+        height: 180px;
+        width: 180px;
+        margin: 1rem 0 0 0;
+    }
+    .hero .hbody h1{
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
+    .hero .hbody p{
+        margin-bottom: 1rem;
+    }
+}
+@media(max-width:374px){
+    .navbar-brand{
+        font-size: 1.0rem;
+    }
+    .navbar{
+        padding: 10px 20px;
+    }
+    .hero{
+        height: 80vh;
+    }
+    .hero .hero-logo{
+        height: 140px;
+        width: 140px;
+        margin: 1.2rem 0 0 0;
+    }
+    .hero .hbody h1{
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+    .hero .hbody p{
+        margin-bottom: 1rem;
+        font-size: 0.7rem;
+    }
+    .about p{
+        font-size: 0.7rem;
+    }
+}
