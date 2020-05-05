@@ -102,7 +102,7 @@ body{
     width: 50%;
 }
 article.event {
-    margin: 50px 5px;
+    margin: 0px 5px 50px 5px;
     background-color: #091744;
     color: white;
     font-family: 'Lato', sans-serif;
@@ -207,7 +207,7 @@ article.event div ul li div.event-card div.event-card-content p {
     background-position: center bottom;
     height: 40vh;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 20px;
 }
 .contact ul{
@@ -223,6 +223,9 @@ article.event div ul li div.event-card div.event-card-content p {
 .contact .fa-lg{
     font-size: 1.2rem;
     font-weight: 600 !important;
+}
+.contact .col-8{
+    margin-top: 1rem;
 }
 @media(max-width:1280px){
     .hero .hbody p{
@@ -262,7 +265,10 @@ article.event div ul li div.event-card div.event-card-content p {
         background-size: contain;
         background-attachment: local;
         background-position: center bottom;
-        height: 30vh;
+        height: auto;
+    }
+    .contact .col-8{
+        margin-top: 3rem;
     }
     .circle{
         margin: 6px 0.6rem;
