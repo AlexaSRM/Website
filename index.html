@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#"><img class="logo" src="res/img/logo.png" alt=""> Alexa Developers SRM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon " style=""><hr><hr><hr></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
@@ -66,7 +66,7 @@
                 dolorem!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est minima quidem enim maiores
                 autem numquam magnam maxime! Porro magni delectus quas assumenda exercitationem dolorum culpa vel nemo natus
                 maiores.</p>
-            <div id="flat">
+            <div id="flat" style="height: 400px; padding-top: 4rem;">
                 <ul>
                     <li data-flip-title="Red">
                         <div class="event-card design1 text-center">
@@ -165,7 +165,7 @@
     <div id="contact-section" class="contact-section text-center">
         <div><h2 style="font-weight: 600;"><span class="title-2">Contact Us!</span></h2></div>
         <div class="contact">
-            <div class="col-8">
+            <div class="xyz col-8">
                 <ul class="row justify-content-center">
                     <li class="circle"><a href=""><span class="fa fa-facebook-f fa-lg"></span></a></li>
                     <li class="circle"><a href=""><span class="fa fa-instagram fa-lg"></span></a></li>
@@ -208,6 +208,7 @@
             autoplay: 2000,
             pauseOnHover: true,
             click: true,
+            touch: true,
             start: 'center',
             scrollwheel: true,
             touch: true,
@@ -221,6 +222,16 @@
             var navheight = $('nav').height();
             $('.hbody').css('margin-top', navheight + 20)
         })
+        var x = window.matchMedia('(max-width:767px)')
+        if(x.matches){
+            $('.nav-link').on('click', function() {
+                $('.navbar-collapse').toggleClass('show');
+            });
+        }
+        var y = window.matchMedia('(max-width:374px)')
+        if(y.matches){
+            $('.xyz').toggleClass('col-8 col-12')
+        }
     </script>
 </body>
 </html>
