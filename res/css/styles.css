@@ -62,7 +62,7 @@ body{
     background-size: cover;
     background-attachment: local;
     background-position: center;
-    height: 80vh;
+    height: 90vh;
     position: relative;
     z-index: 3;
 }
@@ -97,13 +97,12 @@ body{
 .about{
     display: flex;
     align-items: center;
-    background-image: url('../img/about.png');
+    /*background-image: url('../img/about.png');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
     background-position:90%;
     height: 80vh;
-    transform: translateY(-6vh);
     padding: 6vh 15px;
 }
 .about p{
@@ -275,6 +274,14 @@ article.event div ul li div.event-card div.event-card-content p {
         margin: 4% 10%;
         font-size: 0.8rem;
     } 
+    .hero{
+        height: 60vh;
+    }
+}
+@media(width : 768px){
+    .hero{
+        height: 70vh;
+    }
 }
 @media(max-width:767px){
     .hero .hero-logo{
@@ -316,6 +323,9 @@ article.event div ul li div.event-card div.event-card-content p {
     }
 }
 @media(max-width:415px){
+    .about{
+        margin-top: 40px!important;
+    }
     .navbar-brand{
         font-size: 1.0rem;
     }
@@ -339,7 +349,7 @@ article.event div ul li div.event-card div.event-card-content p {
         border-top: 1px solid white;
     }
     .hero{
-        height: 75vh;
+        height: 90vh;
     }
     .hero .hero-logo{
         height: 180px;
@@ -352,6 +362,11 @@ article.event div ul li div.event-card div.event-card-content p {
     }
     .hero .hbody p{
         margin-bottom: 1rem;
+    }
+}
+@media(width:375px){
+    .hero{
+        height: 100vh;
     }
 }
 @media(max-width:374px){
