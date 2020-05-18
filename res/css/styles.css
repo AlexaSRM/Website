@@ -57,7 +57,7 @@ body{
     border-top: 1px solid white;
 }
 .hero{
-    background-image: url('../img/Top.png');
+    background-image: url('../img/Top2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
@@ -72,7 +72,7 @@ body{
 .hero .hbody{
     position: absolute;
     bottom: 0;
-    width: 80%;
+    width: 70%;
     left: 50%;
     transform: translate(-50%, -10%);
 }
