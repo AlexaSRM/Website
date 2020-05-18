@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #091744!important;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+
+.navbar{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  background-image: url(../img/nav2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 4;
+  box-shadow: 0px 2px 12px #29B6F6;
+  padding: 10px 30px;
+}
+.navbar .logo{
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+.navbar-nav{
+  font-weight: 600;
+}
+.navbar a{
+  color: white;
+}
+.navbar .active{
+  border-bottom: 2px solid white;
+}
+.navbar-toggler-icon{
+  height: 30px; 
+  width: 30px;
+}
+.navbar-toggler-icon hr{
+  margin: 0 0 10px 0;
+  color: white;
+  border: 0;
+  border-top: 1px solid white;
+}
+.navbar-toggler-icon hr:nth-child(3){
+  margin: 0 0 0 0;
+  color: white;
+  border: 0;
+  border-top: 1px solid white;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+  margin: 80px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.creatives,
+.business {
+  display: none;
+}
+
+.underline::after {
+  content: "";
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 5px;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.underline:hover::after {
+  width: 100%;
+  background-color: #173b83;
+}
+
+.team-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.team-heading p::after {
+  content: "";
+  margin: auto;
+  background-color: #173b83;
+  position: relative;
+  top: 5px;
+  display: block;
+  width: 50%;
+  height: 5px;
+}
+
+.container {
+  width: 100%;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .box {
+  position: relative;
+  width: 150px;
+  height: 300px;
+  margin: 20px 40px;
+}
+
+.container .box .img-box {
+  height: 150px;
+  width: 150px;
+  border: 3px solid #1e90ff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.container .box .img-box img {
+  max-width: 120%;
+  object-fit: contain;
+}
+
+.name,
+.role {
+  text-align: center;
+  text-transform: capitalize;
+}
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.role h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.17em;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #b2bec3;
+  width: 10px;
+  height: 10px;
+}
+
+.primary::after,
+.click-underline::after {
+  content: "";
+  margin: auto;
+  background-color: #173b83;
+  display: block;
+  width: 100%;
+  height: 5px;
+}
+
+@media (max-width: 500px) {
+  .btns {
+    margin: 22px;
+    font-size: 16px;
+  }
+
+  .container .box {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    margin: 0px 70px;
+  }
+
+  .container .box .img-box {
+    height: 100px;
+    width: 100px;
+  }
+
+  .team-heading {
+    font-size: 22px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .role {
+    font-size: 11px;
+  }
+
+  .dot {
+    margin: 0 7px;
+    width: 8px;
+    height: 8px;
+  }
+}
