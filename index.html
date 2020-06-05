@@ -82,7 +82,7 @@
             style="width: 200px; display: block;"
             alt="Loading"
           />
-          <h1 style="text-align: center; font-weight: 700;">
+          <h1 style="text-align: center; font-weight: 700; font-family: 'Lato', sans-serif;">
             Alexa<br />Developers<br />SRM
           </h1>
           <h6 class="line-1 anim-typewriter" style="font-weight: 400;">
@@ -277,11 +277,35 @@
     <script src="res/js/jquery.flipster.min.js"></script>
     <script src="res/js/main.js"></script>
     <script>
-        setTimeout(() => {
-          $("#loader").fadeOut();
-          $('.wrapper').removeClass('d-none')
-          $('.wrapper').fadeIn(1000);
-        }, 4000);
+        function loader(){
+            //setTimeout(() => {
+                $("#loader").fadeOut();
+                $('.wrapper').removeClass('d-none')
+                $('.wrapper').fadeIn(1000);
+            //}, 4000);
+        }
+        if (sessionStorage.isVisited == 'false') {
+            sessionStorage.isVisited = 'true'
+            $(window).load(
+                loader()
+            )
+        }
+        else{
+            $('#loader').hide();
+            $('.wrapper').removeClass('d-none');
+        }
+        window.onunload(function(){
+            sessionStorage.clear();
+            sessionStorage.isVisited = 'false'
+        })
+        // if(sessionStorage.getItem('doNotshow') == 'false'){
+        //     sessionStorage.setItem('doNotShow', true);
+        //     loader();
+        // }
+        // else{
+        //     $('#loader').hide()
+        //     $('.wrapper').removeClass('d-none');
+        // }
       </script>
     <script>
         var flat = $("#flat").flipster({

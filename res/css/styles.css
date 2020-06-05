@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: white;
     text-align: center;
     background-color: #091744;
+    scroll-behavior: smooth;
 }
 .navbar{
     position: fixed;
@@ -106,7 +111,7 @@ body{
     padding: 6vh 15px;
 }
 .about p{
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 4rem;
     font-size: 1.2rem;
 }
@@ -150,7 +155,7 @@ width: 70px;
 
 article.event p {
 margin: 2% 15%;
-font-weight: 600;
+font-weight: 400;
 font-size: 1.2rem;
 }
 article.event div ul{
@@ -219,7 +224,7 @@ article.event div ul li div.event-card div.event-card-content p {
     transform: translateX(-50%);
 }
 .circle{
-    background-color: #7B1FA2;
+    background-color: #173b83;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -259,6 +264,9 @@ article.event div ul li div.event-card div.event-card-content p {
 }
 .fa:hover{
     transform: scale(1.2);
+}
+.xyz a{
+    color: white;
 }
 @media(max-width:1280px){
     .hero .hbody p{
