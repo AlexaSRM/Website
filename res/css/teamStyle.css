@@ -138,6 +138,10 @@ body {
   object-fit: contain;
 }
 
+.details {
+  height: 100px;
+}
+
 .name,
 .role {
   text-align: center;
@@ -156,12 +160,20 @@ body {
   display: flex;
   justify-content: center;
 }
-.dot {
-  margin: 0 10px;
+.dots a{
+  margin: 0 5px;
+  padding: 0;
   border-radius: 50%;
-  background-color: #b2bec3;
-  width: 10px;
-  height: 10px;
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  color: black;
+  text-align: center;
+}
+
+.dots a:hover{
+  color: white;
+  background-color: #173b83;
 }
 
 .primary::after,
