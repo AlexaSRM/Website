@@ -288,7 +288,7 @@ article.event div ul li div.event-card div.event-card-content p {
 }
 @media(width : 768px){
     .hero{
-        height: 70vh;
+        height: 85vh;
     }
 }
 @media(max-width:767px){
@@ -370,6 +370,7 @@ article.event div ul li div.event-card div.event-card-content p {
     }
     .hero .hbody p{
         margin-bottom: 1rem;
+        font-size: 0.8rem;
     }
 }
 @media(width:375px){
@@ -385,7 +386,7 @@ article.event div ul li div.event-card div.event-card-content p {
         padding: 10px 20px;
     }
     .hero{
-        height: 80vh;
+        height: 100vh;
     }
     .hero .hero-logo{
         height: 140px;

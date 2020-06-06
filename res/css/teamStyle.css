@@ -117,7 +117,7 @@ body {
 }
 .container .box {
   position: relative;
-  width: 150px;
+  max-width: 200px;
   height: 300px;
   margin: 20px 40px;
 }
@@ -129,9 +129,12 @@ body {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  margin: auto;
 }
 .container .box .img-box img {
-  max-width: 120%;
+  max-width: 100%;
+  width: 100%;
   object-fit: contain;
 }
 
@@ -181,7 +184,6 @@ body {
     position: relative;
     width: 100px;
     height: 200px;
-    margin: 0px 70px;
   }
 
   .container .box .img-box {
