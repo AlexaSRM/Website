@@ -77,19 +77,19 @@ body{
 .hero .hbody{
     position: absolute;
     bottom: 0;
-    width: 70%;
+    width: 80%;
     left: 50%;
     transform: translate(-50%, -10%);
 }
 .hero .hbody h1{
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 3rem;
 }
 .hero .hbody p{
     font-weight: 400;
-    margin-bottom: 4rem;
-    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 .hero .hero-logo{
     height: 250px;
@@ -270,7 +270,7 @@ article.event div ul li div.event-card div.event-card-content p {
 }
 @media(max-width:1280px){
     .hero .hbody p{
-        margin-bottom: 2rem;
+        margin-bottom: 1.3rem;
     }  
 }
 @media(max-width:1024px){
