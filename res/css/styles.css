@@ -377,6 +377,19 @@ article.event div ul li div.event-card div.event-card-content p {
     .hero{
         height: 100vh;
     }
+    .hero .hbody h1{
+        margin-bottom: 2rem;
+        font-size: 1.9rem;
+    }
+    .hero .hero-logo{
+        height: 140px;
+        width: 140px;
+        margin: 1.2rem 0 0 0;
+    }
+    .hero .hbody p{
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
 }
 @media(max-width:374px){
     .navbar-brand{
@@ -389,13 +402,13 @@ article.event div ul li div.event-card div.event-card-content p {
         height: 100vh;
     }
     .hero .hero-logo{
-        height: 140px;
-        width: 140px;
+        height: 120px;
+        width: 120px;
         margin: 1.2rem 0 0 0;
     }
     .hero .hbody h1{
         margin-bottom: 1rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .hero .hbody p{
         margin-bottom: 1rem;
