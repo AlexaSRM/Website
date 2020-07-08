@@ -2,7 +2,7 @@ body {
     background-color: #0a153a !important;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     display: flex;
     align-items: center;
@@ -16,42 +16,50 @@ body {
     z-index: 4;
     box-shadow: 0px 2px 12px #29B6F6;
     padding: 10px 30px;
-  }
-  .navbar .logo{
+}
+
+.navbar .logo {
     width: 30px;
     height: 30px;
     margin-right: 0.5rem;
-  }
-  .navbar-brand{
+}
+
+.navbar-brand {
     display: flex;
     align-items: center;
     margin-right: 0;
-  }
-  .navbar-nav{
+}
+
+.navbar-nav {
     font-weight: 600;
-  }
-  .navbar a{
+}
+
+.navbar a {
     color: white;
-  }
-  .navbar .active{
+}
+
+.navbar .active {
     border-bottom: 2px solid white;
-  }
-  .navbar-toggler-icon{
-    height: 30px; 
+}
+
+.navbar-toggler-icon {
+    height: 30px;
     width: 30px;
-  }
-  .navbar-toggler-icon hr{
+}
+
+.navbar-toggler-icon hr {
     margin: 0 0 10px 0;
     color: white;
     border: 0;
     border-top: 1px solid white;
-  }
-  .navbar-toggler-icon hr:nth-child(3){
+}
+
+.navbar-toggler-icon hr:nth-child(3) {
     margin: 0 0 0 0;
     color: white;
     border: 0;
     border-top: 1px solid white;
-  }
+}
 
 .event {
     background-color: #091E60;
@@ -86,7 +94,7 @@ body {
     font-family: Arial;
     font-size: 20px;
     font-weight: bold;
-    padding: 12px 25px;
+    padding: 6px 20px;
     text-decoration: none;
     float: right;
     margin-bottom: 1%;
@@ -135,14 +143,17 @@ body {
     .event {
         height: auto;
     }
+
     .bottom-content {
         position: relative;
         display: flex;
     }
+
     .myButton {
         font-size: 0.7rem;
         margin-bottom: 4%;
     }
+
     .cert {
         padding-left: 10px;
         margin-top: 3.5%;
