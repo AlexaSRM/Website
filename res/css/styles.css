@@ -72,12 +72,12 @@ body {
 }
 
 .hero {
-    background-image: url('../img/Top2.png');
+    background-image: url('../img/rec.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
-    background-position: center;
-    height: 90vh;
+    background-position: center bottom;
+    height: auto;
     position: relative;
     z-index: 3;
 }
@@ -94,30 +94,21 @@ body {
     transform: translate(-50%, -10%);
 }
 
-.hero .h-head {
-    position: relative;
-    top: 20vh;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-}
-
-.hero .h-head h1 {
+.hero .bdy h1 {
     font-weight: 700;
     margin-bottom: 1.5rem;
     font-size: 3rem;
 }
 
-.hero .h-head p {
+.hero .bdy p {
     font-weight: 400;
     margin-bottom: 1rem;
     font-size: 1rem;
 }
 
 .hero .hero-logo {
-    height: 250px;
-    width: 250px;
-    margin: 2rem 0 0 0;
+    height: 200px;
+    width: 200px;
     background-color: #091744;
     border-radius: 50%;
     box-shadow: 0px 0px 12px #29B6F6;
@@ -315,8 +306,11 @@ article.event div ul li div.event-card div.event-card-content p {
 }
 
 @media(max-width:1280px) {
-    .hero .h-head p {
+    .hero .bdy p {
         margin-bottom: 1.3rem;
+    }
+    .hero-title{
+    
     }
 }
 
@@ -332,13 +326,13 @@ article.event div ul li div.event-card div.event-card-content p {
     }
 
     .hero {
-        height: 60vh;
+        height: auto;
     }
 }
 
 @media(width : 768px) {
     .hero {
-        height: 85vh;
+        height: auto;
     }
 }
 
@@ -348,7 +342,7 @@ article.event div ul li div.event-card div.event-card-content p {
         width: 180px;
     }
 
-    .hero .h-head h1 {
+    .hero .bdy h1 {
         margin-bottom: 2rem;
         font-size: 2.5rem;
     }
@@ -427,21 +421,21 @@ article.event div ul li div.event-card div.event-card-content p {
     }
 
     .hero {
-        height: 90vh;
+        height: auto;
     }
 
     .hero .hero-logo {
         height: 180px;
         width: 180px;
-        margin: 1rem 0 0 0;
-    }
+        /* margin: 1rem 0 0 0; */
+     }
 
-    .hero .h-head h1 {
+    .hero .bdy h1 {
         margin-bottom: 2rem;
         font-size: 1.8rem;
     }
 
-    .hero .h-head p {
+    .hero .bdy p {
         margin-bottom: 1rem;
         font-size: 0.8rem;
     }
@@ -449,10 +443,10 @@ article.event div ul li div.event-card div.event-card-content p {
 
 @media(width:375px) {
     .hero {
-        height: 100vh;
+        height: auto;
     }
 
-    .hero .h-head h1 {
+    .hero .bdy h1 {
         margin-bottom: 2rem;
         font-size: 1.9rem;
     }
@@ -460,10 +454,10 @@ article.event div ul li div.event-card div.event-card-content p {
     .hero .hero-logo {
         height: 140px;
         width: 140px;
-        margin: 1.2rem 0 0 0;
+        /* margin: 1.2rem 0 0 0; */
     }
 
-    .hero .h-head p {
+    .hero .bdy p {
         margin-bottom: 1rem;
         font-size: 1rem;
     }
@@ -479,21 +473,21 @@ article.event div ul li div.event-card div.event-card-content p {
     }
 
     .hero {
-        height: 100vh;
+        height: auto;
     }
 
     .hero .hero-logo {
         height: 120px;
         width: 120px;
-        margin: 1.2rem 0 0 0;
+        /* margin: 1.2rem 0 0 0; */
     }
 
-    .hero .h-head h1 {
+    .hero .bdy h1 {
         margin-bottom: 1rem;
         font-size: 1.5rem;
     }
 
-    .hero .h-head p {
+    .hero .bdy p {
         margin-bottom: 1rem;
         font-size: 0.7rem;
     }
@@ -512,7 +506,7 @@ article.event div ul li div.event-card div.event-card-content p {
         transform: translate(-50%, -10%);
     }
 
-    .hero .h-head p {
+    .hero .bdy p {
         font-size: 0.9rem;
     }
 }
